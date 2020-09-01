@@ -1,11 +1,12 @@
 # awesome-env-config-cn
-各种开发语言项目环境国内（中国国内加速镜像）配置教程和部分实践经验，包括github.com, nodejs，npm，nvm, yarn, java, maven, gradle
-
+各种开发语言项目环境国内（中国国内加速镜像）配置教程和部分实践经验，包括github.com, nodejs，npm，nvm, yarn, java, maven, gradle, python, mysys2, elasticsearch, php等等，更多正在加入中
 
 # TODO 待补充的
 欢迎大家一起补充
 * python，pip，miniAnaconda, Anaconda
 * msys2, mingw64, qt
+* elasticsearch
+* php, composer
 * ...
 # **目录**
 * [github镜像](#github)
