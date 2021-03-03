@@ -206,7 +206,8 @@
 ## gradle 
 * gradle 安装 
 
-    * 镜像，目前没有查询到国内下载gradle镜像的地址，大家知道的欢迎提供
+    * [镜像：https://mirrors.cloud.tencent.com/gradle/](https://mirrors.cloud.tencent.com/gradle/)
+      [感谢@oakfire提供](https://github.com/oakfire)
     * [官网 https://services.gradle.org/distributions/](https://services.gradle.org/distributions/)
 * gradle 配置
     
