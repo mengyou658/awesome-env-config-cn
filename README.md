@@ -129,7 +129,7 @@
     ```
 * 配置国内源，最简单的一种方式，自动配置淘宝源中多个配置
     ```cmd
-    npm install -g mirror-config-china
+    npm install -g --registry=https://registry.npm.taobao.org mirror-config-china
     ```
 ## jdk
 * java jdk 安装
