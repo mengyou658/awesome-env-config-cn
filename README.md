@@ -1,8 +1,12 @@
 # awesome-env-config-cn
 各种开发语言项目环境国内（中国国内加速镜像）配置教程和部分实践经验，包括github.com, nodejs，npm，nvm, yarn, java, maven, gradle, python, mysys2, elasticsearch, php等等，更多正在加入中
 
+本项目地址：[https://github.com/yunchaoq/awesome-env-config-cn](https://github.com/yunchaoq/awesome-env-config-cn)
+
 # TODO 待补充的
 欢迎大家一起补充
+* ruby
+* pod
 * ...
 # **目录**
 * [linux系统镜像源](#linux)
@@ -202,7 +206,8 @@
 ## gradle 
 * gradle 安装 
 
-    * 镜像，目前没有查询到国内下载gradle镜像的地址，大家知道的欢迎提供
+    * [镜像：https://mirrors.cloud.tencent.com/gradle/](https://mirrors.cloud.tencent.com/gradle/)
+      [感谢@oakfire提供](https://github.com/oakfire)
     * [官网 https://services.gradle.org/distributions/](https://services.gradle.org/distributions/)
 * gradle 配置
     
