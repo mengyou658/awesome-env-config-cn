@@ -65,9 +65,9 @@
     * 安装
         * linux或者mac安装，镜像：
              ```bash
-                curl -o- https://raw.fastgit.org/nvm-sh/nvm/master/install.sh | sed -e "s/raw.githubusercontent.com/raw.fastgit.org/g" | bash
+                curl -o- https://raw.fastgit.org/nvm-sh/nvm/master/install.sh | sed -e "s/raw.githubusercontent.com/raw.fastgit.org/g" | sed -e "s/github.com/hub.fastgit.org/g" | bash
                 或者
-                wget -qO- https://raw.fastgit.org/nvm-sh/nvm/master/install.sh | sed -e "s/raw.githubusercontent.com/raw.fastgit.org/g" | bash
+                wget -qO- https://raw.fastgit.org/nvm-sh/nvm/master/install.sh | sed -e "s/raw.githubusercontent.com/raw.fastgit.org/g" | sed -e "s/github.com/hub.fastgit.org/g" | bash
              ```
         * linux或者mac安装，官方：
              ```bash
