@@ -27,6 +27,8 @@
     * [composer 包管理镜像](#composer)
 * [msys2](#msys2)
     * [msys2 安装qt5](#msys2-qt5)
+* [go](#go)
+    * [GOPROXY解决go基础依赖无法下载得问题](#GOPROXY)
 
     
 ---- 
@@ -471,3 +473,20 @@
     pacman -S  mingw-w64-x86_64-clang mingw-w64-x86_64-clang-tools-extra  mingw-w64-x86_64-clang-analyzer mingw-w64-x86_64-qt5  mingw-w64-x86_64-qt-creator 
     ```
 
+
+## go
+* [go 安装，goproxy.io七牛镜像，https://gomirrors.org/](https://gomirrors.org/)
+
+## GOPROXY
+* [goproxy.io七牛镜像](https://goproxy.io)
+* 环境设置
+1. windows对应的设置环境变量即可（也可以自己手动设置环境变量，以下需要管理员运行命令行）
+    ```cmd
+    setx /m GOPROXY https://goproxy.io,direct
+    setx /m GO111MODULE auto
+    ```
+1. linux 环境 编辑~/.bashrc（bash）或者~/.zshrc（zsh)
+    ```bash
+    export GOPROXY=https://goproxy.io,direct
+    export GO111MODULE=auto
+    ```
