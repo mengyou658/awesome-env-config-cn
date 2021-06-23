@@ -29,6 +29,8 @@
     * [msys2 安装qt5](#msys2-qt5)
 * [go](#go)
     * [GOPROXY解决go基础依赖无法下载得问题](#GOPROXY)
+* [rust](#rust)
+    * [cargo](#cargo)
 
     
 ---- 
@@ -489,4 +491,52 @@
     ```bash
     export GOPROXY=https://goproxy.io,direct
     export GO111MODULE=auto
+    ```
+
+## rust
+* [rust 清华镜像 https://mirrors.tuna.tsinghua.edu.cn/rustup/](https://mirrors.tuna.tsinghua.edu.cn/rustup/)
+    1. windows 下安装
+        1. [下载 https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
+        1. 设置环境变量
+           ```cmd
+              setx /m RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup
+            ```
+        1. 执行rustup-init.exe安装
+    1. linux 下安装
+        1. 设置环境变量 编辑~/.bashrc（bash）或者~/.zshrc（zsh)
+           ```bash
+              export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+            ```
+        1. 安装
+            ```bash
+              wget https://mirrors.ustc.edu.cn/rust-static/rustup/dist/x86_64-apple-darwin/rustup-init
+              ./rustup-init
+            ```
+* [rust 官方下载速度还可以 https://www.rust-lang.org/](https://www.rust-lang.org/)
+    1. windows 下安装
+        1. [下载 https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
+        1. 执行rustup-init.exe安装
+    1. linux 下安装
+        1. 安装
+            ```bash
+              curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+            ```
+
+## cargo
+* 环境设置
+1. windows 到 %USERPROFILE%\.cargo 当前用户的.cargo目录下，新建或者修改config，内容如下
+    ```
+    [source.crates-io]
+    registry = "https://github.com/rust-lang/crates.io-index"
+    replace-with = 'ustc'
+    [source.ustc]
+    registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+    ```
+1. linux 环境 编辑`vi ~/.cargo/config`
+    ```
+    [source.crates-io]
+    registry = "https://github.com/rust-lang/crates.io-index"
+    replace-with = 'ustc'
+    [source.ustc]
+    registry = "git://mirrors.ustc.edu.cn/crates.io-index"
     ```
