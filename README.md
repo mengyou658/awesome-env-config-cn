@@ -497,27 +497,35 @@
 * [rust 清华镜像 https://mirrors.tuna.tsinghua.edu.cn/rustup/](https://mirrors.tuna.tsinghua.edu.cn/rustup/)
     1. windows 下安装
         1. [下载 https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
-        1. 设置环境变量
+        1. 设置环境变量(请以管理员运行)
            ```cmd
               setx /m RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup
+              setx /m RUSTUP_UPDATE_ROOT https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
             ```
         1. 执行rustup-init.exe安装
     1. linux 下安装
         1. 设置环境变量 编辑~/.bashrc（bash）或者~/.zshrc（zsh)
            ```bash
               export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+              export export RUSTUP_UPDATE_ROOT=https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
             ```
         1. 安装
             ```bash
-              wget https://mirrors.ustc.edu.cn/rust-static/rustup/dist/x86_64-apple-darwin/rustup-init
-              ./rustup-init
+                curl https://sh.rustup.rs -sSf | sh
+                # 这里也可以下载对应的数据，直接安装 https://mirrors.ustc.edu.cn/rust-static/rustup/dist/
+                # wget https://mirrors.ustc.edu.cn/rust-static/rustup/dist/x86_64-apple-darwin/rustup-init
+                # ./rustup-init
             ```
 * [rust 官方下载速度还可以 https://www.rust-lang.org/](https://www.rust-lang.org/)
     1. windows 下安装
         1. [下载 https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
         1. 执行rustup-init.exe安装
     1. linux 下安装
-        1. 安装
+        1. linux安装
+            ```bash
+              curl https://sh.rustup.rs -sSf | sh
+            ```
+        1. wsl安装
             ```bash
               curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
             ```
@@ -525,18 +533,48 @@
 ## cargo
 * 环境设置
 1. windows 到 %USERPROFILE%\.cargo 当前用户的.cargo目录下，新建或者修改config，内容如下
-    ```
-    [source.crates-io]
-    registry = "https://github.com/rust-lang/crates.io-index"
-    replace-with = 'ustc'
-    [source.ustc]
-    registry = "git://mirrors.ustc.edu.cn/crates.io-index"
-    ```
+```
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+# 替换成你偏好的镜像源
+replace-with = 'tuna'
+
+# 清华大学
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+
+# 中国科学技术大学
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+# 上海交通大学
+[source.sjtu]
+registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
+
+# rustcc社区
+[source.rustcc]
+registry = "git://crates.rustcc.cn/crates.io-index"
+```
 1. linux 环境 编辑`vi ~/.cargo/config`
-    ```
-    [source.crates-io]
-    registry = "https://github.com/rust-lang/crates.io-index"
-    replace-with = 'ustc'
-    [source.ustc]
-    registry = "git://mirrors.ustc.edu.cn/crates.io-index"
-    ```
+```
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+# 替换成你偏好的镜像源
+replace-with = 'tuna'
+
+# 清华大学
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+
+# 中国科学技术大学
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+# 上海交通大学
+[source.sjtu]
+registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
+
+# rustcc社区
+[source.rustcc]
+registry = "git://crates.rustcc.cn/crates.io-index"
+```
