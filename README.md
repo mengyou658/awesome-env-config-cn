@@ -320,7 +320,7 @@
 ## python
 * python 安装
     * windows 系统安装，直接下载安装包
-        * [阿里云镜像，https://npm.taobao.org/mirrors/python/](https://npm.taobao.org/mirrors/python/) 
+        * [阿里云镜像，https://npmmirror.com/mirrors/python/](https://npmmirror.com/mirrors/python/) 
         * [官方下载，https://www.python.org/downloads/](https://www.python.org/downloads/) 
     * linux 系统默认自带python，需要单独安装新版本，linux系统镜像配置请参考[linux系统镜像源](#linux)
         * ubuntu
