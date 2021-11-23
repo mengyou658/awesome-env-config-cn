@@ -49,13 +49,13 @@
 ## nodejs
 * nodejs 安装
 
-    [镜像源：npm.taobao.com](https://developer.aliyun.com/mirror/NPM) 
+    [镜像源：http://npmmirror.com/](http://npmmirror.com/) 
     
     [官方地址：nodejs.org](nodejs.org)
     
     * 直接下载安装（**推荐使用nvm管理nodejs版本自由切换**）：
     
-        * 下载地址： [http://npm.taobao.org/mirrors/node](http://npm.taobao.org/mirrors/node) 选择对应的版本下载安装即可
+        * 下载地址： [http://npmmirror.com/mirrors/node](http://npmmirror.com/mirrors/node) 选择对应的版本下载安装即可
 
 * [nodejs 配置国内npm源，参考npm nodejs包管理工具配置](#npm)
 
@@ -82,7 +82,7 @@
     * 配置国内源
         * 设置环境变量：NVM_NODEJS_ORG_MIRROR，bash编辑~/.bashrc，zsh编辑~/.zshrc
         ```bash
-            export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node
+            export NVM_NODEJS_ORG_MIRROR=http://npmmirror.com/mirrors/node
         ```
     
 * windows 
@@ -100,8 +100,8 @@
     * 配置国内源
         * 设置
         ```cmd
-            nvm node_mirror http://npm.taobao.org/mirrors/node
-            nvm npm_mirror https://npm.taobao.org/mirrors/npm/
+            nvm node_mirror http://npmmirror.com/mirrors/node
+            nvm npm_mirror http://npmmirror.com/mirrors/npm/
         ```
     
 ## yarn
@@ -118,7 +118,7 @@
        ```
 * 配置国内源
     ```cmd
-    yarn config set registry https://registry.npm.taobao.org
+    yarn config set registry https://registry.npmmirror.com
     ```
 
 ## npm 
@@ -133,7 +133,7 @@
     ```
 * 配置国内源，最简单的一种方式，自动配置淘宝源中多个配置
     ```cmd
-    npm install -g --registry=https://registry.npm.taobao.org mirror-config-china
+    npm install -g --registry=https://registry.npmmirror.com mirror-config-china
     ```
 ## jdk
 * java jdk 安装
