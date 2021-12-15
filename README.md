@@ -12,9 +12,9 @@
 * [linux系统镜像源](#linux)
 * [github镜像](#github)
 * [nodejs镜像](#nodejs)
-	* [nvm nodejs版本管理工具](#nvm) 
-	* [yarn nodejs包管理工具](#yarn) 
-	* [npm nodejs包管理工具](#npm) 
+    * [nvm nodejs版本管理工具](#nvm) 
+    * [yarn nodejs包管理工具](#yarn) 
+    * [npm nodejs包管理工具](#npm) 
 * [java JDK](#jdk)
     * [maven包管理](#maven)
     * [gradle包管理](#gradle)
@@ -31,7 +31,7 @@
     * [GOPROXY解决go基础依赖无法下载得问题](#GOPROXY)
 * [rust](#rust)
     * [cargo](#cargo)
-
+* [github clone加速配置](#github-gitconfig)
     
 ---- 
 
@@ -577,4 +577,13 @@ registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
 # rustcc社区
 [source.rustcc]
 registry = "git://crates.rustcc.cn/crates.io-index"
+```
+
+## github-gitconfig
+备注：github clone的时候使用git方式下载基本不出问题
+* 环境设置
+1. windows 到 %USERPROFILE%\.gitconfig 当前用户的.gitconfig文件，内容如下
+```
+[url "git@github.com"]
+	insteadOf = https://github.com
 ```
