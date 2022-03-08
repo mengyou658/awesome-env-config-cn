@@ -584,6 +584,6 @@ registry = "git://crates.rustcc.cn/crates.io-index"
 * 环境设置
 1. windows 到 %USERPROFILE%\.gitconfig 当前用户的.gitconfig文件，内容如下
 ```
-[url "git@github.com"]
-	insteadOf = https://github.com
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 ```
