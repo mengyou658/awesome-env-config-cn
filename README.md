@@ -43,26 +43,27 @@
     
 ## github
 * [**推荐使用chrome插件** https://github.com/jadezi/github-accelerator/ 访问github对应的网站自动展示加速连接](https://github.com/jadezi/github-accelerator/)
-    * 国内镜像源1，**推荐**：[https://hub.fastgit.org](https://hub.fastgit.org)
+    * 国内镜像源1，**推荐**：[https://hub.fastgit.xyz](https://hub.fastgit.xyz)
+    * 国内镜像源1，这个目前不能直接访问，下载之类的不影响 **推荐**：[https://hub.fastgit.org](https://hub.fastgit.org)
     * 国内镜像源2：[https://github.com.cnpmjs.org 这个没有上面的快点](https://github.com.cnpmjs.org)
 
 ## nodejs
 * nodejs 安装
 
-    [镜像源：http://npmmirror.com/](http://npmmirror.com/) 
+    [镜像源：https://npmmirror.com/](https://npmmirror.com/) 
     
     [官方地址：nodejs.org](nodejs.org)
     
     * 直接下载安装（**推荐使用nvm管理nodejs版本自由切换**）：
     
-        * 下载地址： [http://npmmirror.com/mirrors/node](http://npmmirror.com/mirrors/node) 选择对应的版本下载安装即可
+        * 下载地址： [https://npm.taobao.org/mirrors/node](https://npm.taobao.org/mirrors/node) 选择对应的版本下载安装即可
 
 * [nodejs 配置国内npm源，参考npm nodejs包管理工具配置](#npm)
 
 ## nvm
 * linux或者mac
 
-    [镜像源：https://hub.fastgit.org/nvm-sh/nvm](https://hub.fastgit.org/nvm-sh/nvm) 
+    [镜像源：https://hub.fastgit.xyz/nvm-sh/nvm](https://hub.fastgit.xyz/nvm-sh/nvm) 
     
     [官方地址：https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
     
@@ -82,7 +83,7 @@
     * 配置国内源
         * 设置环境变量：NVM_NODEJS_ORG_MIRROR，bash编辑~/.bashrc，zsh编辑~/.zshrc
         ```bash
-            export NVM_NODEJS_ORG_MIRROR=http://npmmirror.com/mirrors/node
+            export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
         ```
     
 * windows 
@@ -100,8 +101,8 @@
     * 配置国内源
         * 设置
         ```cmd
-            nvm node_mirror http://npmmirror.com/mirrors/node
-            nvm npm_mirror http://npmmirror.com/mirrors/npm/
+            nvm node_mirror https://npm.taobao.org/mirrors/node
+            nvm npm_mirror https://npm.taobao.org/mirrors/npm/
         ```
     
 ## yarn
@@ -320,7 +321,7 @@
 ## python
 * python 安装
     * windows 系统安装，直接下载安装包
-        * [阿里云镜像，https://npmmirror.com/mirrors/python/](https://npmmirror.com/mirrors/python/) 
+        * [阿里云镜像，https://npm.taobao.org/mirrors/python/](https://npm.taobao.org/mirrors/python/) 
         * [官方下载，https://www.python.org/downloads/](https://www.python.org/downloads/) 
     * linux 系统默认自带python，需要单独安装新版本，linux系统镜像配置请参考[linux系统镜像源](#linux)
         * ubuntu
